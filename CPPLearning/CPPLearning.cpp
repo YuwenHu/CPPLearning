@@ -1,16 +1,16 @@
 ﻿// CPPLearning.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
-#include <iostream>
+#include <iostream> //# is preprocessor state, include is find a file, which called iostream, and copy paste in this one
 using namespace std;
 
-int main()
+int main()//no need to return any value for main function
 {
     std::cout << "Hello World!\n";
     int year;
     bool isLeapYear;
 
-    cout << "Please enter the year: ";
+    cout << "Please enter the year: "; 
     cin >> year;
     isLeapYear = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
 
@@ -18,12 +18,13 @@ int main()
         cout << year << "is a leap year" << endl;
     else
         cout << year << "is not a leap year" << endl;
-    return 0
+    return 0;
 
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
 // 调试程序: F5 或调试 >“开始调试”菜单
+//ctl+F7 is compile
 
 // 入门使用技巧: 
 //   1. 使用解决方案资源管理器窗口添加/管理文件
