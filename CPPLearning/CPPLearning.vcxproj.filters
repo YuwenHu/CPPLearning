@@ -18,5 +18,8 @@
     <ClCompile Include="CPPLearning.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Chat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

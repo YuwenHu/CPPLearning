@@ -1,12 +1,14 @@
 ﻿// CPPLearning.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+//deleration这个symble/function存在，defination这个funciton具体是干嘛的
 
 #include <iostream> //# is preprocessor state, include is find a file, which called iostream, and copy paste in this one
 using namespace std;
+void Sign(const char*);
 
 int main()//no need to return any value for main function
 {
-    std::cout << "Hello World!\n";
+    std::cout << "HEy\n";
+    Sign("Hello World!");  
     int year;
     bool isLeapYear;
 
@@ -15,9 +17,11 @@ int main()//no need to return any value for main function
     isLeapYear = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
 
     if (isLeapYear)
-        cout << year << "is a leap year" << endl;
+        cout << year << " is a leap year" << endl;
     else
-        cout << year << "is not a leap year" << endl;
+        cout << year << " is not a leap year" << endl;
+
+    std::cin.get();
     return 0;
 
 }
